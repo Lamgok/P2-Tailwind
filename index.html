@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Page - Direktur Indomaret</title>
 
-    <!-- Tailwind via CDN (hanya ini yang dipakai) -->
+    <!-- Tailwind via CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Font Awesome -->
@@ -15,7 +15,7 @@
     />
   </head>
   <body
-    class="font-sans bg-gradient-to-br from-gray-50 via-gray-100 to-gray-200"
+    class="font-sans bg-gradient-to-br from-gray-50 via-gray-100 to-gray-200 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"
   >
     <!-- Navbar -->
     <header
@@ -49,13 +49,11 @@
       class="pt-32 pb-20 bg-gradient-to-r from-yellow-400 to-yellow-600 text-gray-900 text-center"
     >
       <div class="container mx-auto px-6 flex flex-col items-center">
-        <!-- Foto Profil -->
         <img
           src="https://via.placeholder.com/180"
           alt="Foto Direktur"
           class="w-40 h-40 rounded-full border-4 border-white shadow-lg mb-6"
         />
-        <!-- Nama & Jabatan -->
         <h1 class="text-4xl md:text-6xl font-extrabold mb-4">
           Lamgok Hando Siahaan
         </h1>
@@ -71,12 +69,11 @@
       </div>
     </section>
 
-    <!-- About Section (dua kolom, isi lebih panjang) -->
+    <!-- About Section -->
     <section id="about" class="py-20 bg-white">
       <div
         class="container mx-auto px-6 grid md:grid-cols-2 gap-10 items-center"
       >
-        <!-- Teks -->
         <div>
           <h2 class="text-3xl font-bold mb-6">Tentang Saya</h2>
           <p class="text-lg text-gray-700 mb-4">
@@ -99,7 +96,6 @@
             sosial.
           </p>
         </div>
-        <!-- Gambar pendukung -->
         <div class="flex justify-center">
           <img
             src="https://img.freepik.com/free-vector/business-team-concept-illustration_114360-589.jpg"
@@ -110,12 +106,10 @@
       </div>
     </section>
 
-    <!-- Services Section (Carousel dengan panah) -->
+    <!-- Services Section -->
     <section id="services" class="py-20 bg-gray-100 relative">
       <div class="container mx-auto px-6">
         <h2 class="text-3xl font-bold text-center mb-12">Layanan Saya</h2>
-
-        <!-- Tombol Panah -->
         <button
           id="prevBtn"
           class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-3 rounded-full shadow hover:bg-gray-700"
@@ -128,65 +122,50 @@
         >
           <i class="fas fa-chevron-right"></i>
         </button>
-
-        <!-- Container Scroll -->
         <div id="serviceContainer" class="overflow-x-auto scroll-smooth">
           <div class="flex space-x-6 pb-4">
-            <!-- Service 1 -->
             <div
               class="min-w-[280px] bg-white p-8 rounded-2xl shadow-md text-center"
             >
-              <div class="text-yellow-600 text-4xl mb-4">
-                <i class="fas fa-chart-line"></i>
-              </div>
+              <i class="fas fa-chart-line text-yellow-600 text-4xl mb-4"></i>
               <h3 class="font-bold text-xl mb-2">Konsultasi Bisnis Retail</h3>
               <p class="text-gray-600">
                 Strategi mengembangkan jaringan ritel modern.
               </p>
             </div>
-            <!-- Service 2 -->
             <div
               class="min-w-[280px] bg-white p-8 rounded-2xl shadow-md text-center"
             >
-              <div class="text-yellow-600 text-4xl mb-4">
-                <i class="fas fa-truck"></i>
-              </div>
+              <i class="fas fa-truck text-yellow-600 text-4xl mb-4"></i>
               <h3 class="font-bold text-xl mb-2">Manajemen Supply Chain</h3>
               <p class="text-gray-600">
                 Optimasi distribusi barang agar efisien.
               </p>
             </div>
-            <!-- Service 3 -->
             <div
               class="min-w-[280px] bg-white p-8 rounded-2xl shadow-md text-center"
             >
-              <div class="text-yellow-600 text-4xl mb-4">
-                <i class="fas fa-lightbulb"></i>
-              </div>
+              <i class="fas fa-lightbulb text-yellow-600 text-4xl mb-4"></i>
               <h3 class="font-bold text-xl mb-2">Strategi Ekspansi</h3>
               <p class="text-gray-600">
                 Membuka peluang pasar baru di daerah potensial.
               </p>
             </div>
-            <!-- Service 4 -->
             <div
               class="min-w-[280px] bg-white p-8 rounded-2xl shadow-md text-center"
             >
-              <div class="text-yellow-600 text-4xl mb-4">
-                <i class="fas fa-user-friends"></i>
-              </div>
+              <i class="fas fa-user-friends text-yellow-600 text-4xl mb-4"></i>
               <h3 class="font-bold text-xl mb-2">Kemitraan UMKM</h3>
               <p class="text-gray-600">
                 Mendukung UMKM lokal agar bisa berkembang.
               </p>
             </div>
-            <!-- Service 5 -->
             <div
               class="min-w-[280px] bg-white p-8 rounded-2xl shadow-md text-center"
             >
-              <div class="text-yellow-600 text-4xl mb-4">
-                <i class="fas fa-shopping-basket"></i>
-              </div>
+              <i
+                class="fas fa-shopping-basket text-yellow-600 text-4xl mb-4"
+              ></i>
               <h3 class="font-bold text-xl mb-2">Digitalisasi Retail</h3>
               <p class="text-gray-600">
                 Transformasi digital dalam belanja modern.
@@ -197,8 +176,44 @@
       </div>
     </section>
 
+    <!-- Pencapaian Section -->
+    <section id="portfolio" class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-12">Pencapaian</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div
+            class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition"
+          >
+            <h3 class="font-semibold text-lg mb-2">10.000+ Gerai</h3>
+            <p class="text-gray-600">
+              Mengembangkan jaringan Indomaret hingga lebih dari 10 ribu gerai
+              di seluruh Indonesia.
+            </p>
+          </div>
+          <div
+            class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition"
+          >
+            <h3 class="font-semibold text-lg mb-2">Digitalisasi Ritel</h3>
+            <p class="text-gray-600">
+              Menginisiasi program e-commerce Indomaret untuk menjawab tren
+              belanja online.
+            </p>
+          </div>
+          <div
+            class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition"
+          >
+            <h3 class="font-semibold text-lg mb-2">Kemitraan UMKM</h3>
+            <p class="text-gray-600">
+              Membina ratusan UMKM lokal agar dapat menjual produknya melalui
+              Indomaret.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Contact Section -->
-    <section id="contact" class="py-20 text-center">
+    <section id="contact" class="py-20 text-center bg-gray-100">
       <div class="container mx-auto px-6">
         <h2 class="text-3xl font-bold mb-6">Hubungi Saya</h2>
         <p class="mb-6 text-gray-700">
@@ -224,14 +239,10 @@
     <!-- Script Carousel -->
     <script>
       const container = document.getElementById("serviceContainer");
-      const prevBtn = document.getElementById("prevBtn");
-      const nextBtn = document.getElementById("nextBtn");
-
-      prevBtn.addEventListener("click", () => {
+      document.getElementById("prevBtn").addEventListener("click", () => {
         container.scrollBy({ left: -300, behavior: "smooth" });
       });
-
-      nextBtn.addEventListener("click", () => {
+      document.getElementById("nextBtn").addEventListener("click", () => {
         container.scrollBy({ left: 300, behavior: "smooth" });
       });
     </script>
